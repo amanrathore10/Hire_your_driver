@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookYourDriver</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+
+
+    <div class="booking-form">
+        <div class="formheader"><h3>Driver Booking Details</h3></div>
+        <form action="Book.php" method="post" target="_parent">
+            <label for="name" >Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="email" >E-mail</label>
+            <input type="email" id='email' placeholder="example@gmail.com" name="email">
+            <label for="contact">Contact(10 digits)</label>
+            <input type="text" id="contact" placeholder="9xxxxxxxx1" name="contact">
+            <label for="driver">Driver</label>
+            <select name="driver"  id="driver"  >
+
+                    <option value="" >Select-Driver</option>
+                    <option value="D-Ramesh">Ramesh</option>
+                    <option value="D-Suresh">Suresh</option>
+                    <option value="D-Yash">Yash</option>
+
+            </select>
+            <label for="service">Service</label>
+            <select name="service" id="service"  >
+
+                    <option value="" >Select-Category</option>
+                    <option value="Outstation">Outstation</option>
+                    <option value="Hourly">Hourly</option>
+                    <option value="Airport">Airport</option>
+                    <option value="Drink & Drive">Drink & Drive</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Monthly">Monthly</option>
+
+            </select>
+            <label for="datetime">Date-Time</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+            <label for="hours" ></label>
+            <input type="number" step="1" min="4" name="hours" id="hours" placeholder="minimum 4 hours">
+            <button type="submit" >Book Now</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
+<!--
+<?php
+include "Book.php";
+?>-->

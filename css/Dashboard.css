@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    font-family: sans-serif;
+}
+
+.dashboard-title{
+    display: flex;
+    background-color: deepskyblue;
+    color: white;
+    padding:10px;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+}
+.info{
+    border-radius: 20px;
+
+}
+.driver_info{
+    max-width:500px;
+    margin:50px auto;
+    border-radius: 20px;
+    border:1px solid darkgray;
+}
+.info_head{
+    text-align: center;
+    background-color: deepskyblue;
+    color: white;
+    padding:5px;
+    border-radius: 20px 20px 0 0 ;
+}
+.info_details{
+    padding:10px;
+}
+.booking_head{
+    background-color: darkorange;
+    color:white;
+    padding:5px;
+    text-align: center;
+}
+.booking_details{
+    padding: 10px;
+}
